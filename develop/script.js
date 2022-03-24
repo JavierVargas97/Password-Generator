@@ -11,14 +11,14 @@ var passwordArray= [];
 function writePassword() {
   var characters = [];
   var passwordArray = [];
-  var passlength = parseInt(window.prompt('Select expect length (8-128):'));
+  var passlength = parseInt(window.prompt('Select expect length (5-120):'));
 
  
   isNaN(passlength) ? alert ('Enter a number'): '';
   isNaN(passlength) ? end: '';
 
-  (passlength > 117|| passlength <7) ? alert('Select a value between 8 and 128') :'';
-  (passlength > 117|| passlength<7) ? end: '';
+  (passlength > 120|| passlength <5) ? alert('Select a value between 5 and 120') :'';
+  (passlength > 120|| passlength<5) ? end: '';
 
   var uppercaseChoice = window.confirm('Uppercase characters?');
   if (uppercaseChoice) {
